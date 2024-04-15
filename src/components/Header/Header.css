@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 1280px;
+}
+
+.nav{
+    display: flex;
+    gap:48px;
+}
+.nav>a{
+    color:#232323;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap:24px;
+}
+
+.logo > a > img{
+    width: 100px;
+}

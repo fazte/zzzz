@@ -1,0 +1,23 @@
+.catalog_item{
+    padding: 40px 0px;
+    background-color: #EDECEC;
+    border-radius: 6px;
+    width: 320px;
+    /* text-align: center; */
+    padding: 30px 45px;
+}
+.catalog_item>img{
+    display: block;
+    margin: auto;
+    margin-bottom: 46px;
+}
+.car_title{
+    font-size: 18px;
+    font-weight: 500;
+}
+.card_price{
+    margin-top: 38px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 34px;
+}
