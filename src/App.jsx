@@ -6,6 +6,7 @@ import { Routes,Route } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import CardPage from './components/CardPage/CardPage'
 import Sl from './components/Sl/Sl'
+import Home from './components/Home/Home'
 
 function App() {
 
@@ -25,12 +26,13 @@ function App() {
   return (
     <>
       <Header addToBasket={setBasket} basket={basket}/>
-      <Sl products={products} setProducts={setProducts} />
         <Routes>
-          <Route path="/" element={<Catalog addToBasket={setBasket} basket={basket} products={products} setProducts={setProducts}/>}/>
-					<Route path="/:id" element={<CardPage products={products} setProducts={setProducts}/>}/>
+          <Route path="/" element={<Home products={products} setProducts={setProducts}/>}/>
+          <Route path="/catalog" element={<Catalog addToBasket={setBasket} basket={basket} products={products} setProducts={setProducts}/>}/>
+					<Route path="/catalog/:id" element={<CardPage products={products} setProducts={setProducts}/>}/>
 					<Route path="/basket" />
 				</Routes>
+        
       <Footer/>
     </>
   )

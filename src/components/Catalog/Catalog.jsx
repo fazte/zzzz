@@ -7,15 +7,12 @@ export default function Catalog({addToBasket,basket,products, setProducts}) {
 
 	const [query, setQuery] = useState("")
 	const [sorting, setSorting] = useState("")
-	const [category,setCategory] = useState("0")
 
 	function search(e) {
 		setQuery(e.target.value)
 	}
 	const filterdProducts = products.filter(
 		(item) => item.name.toLowerCase().includes(query.toLowerCase())
-		&&
-		(item.category == category || category == 0)
 	)
 
 
@@ -45,12 +42,6 @@ export default function Catalog({addToBasket,basket,products, setProducts}) {
 				<option value="price_asc">Mo Bo3pocTaHuK LeHb</option>
 				<option value="price_desc">Mo y6biBaHuw LeHbi</option>
 			</select>
-			<hr />
-				<button onClick={()=>setCategory(0)}>Все категории</button>
-				<button onClick={()=>setCategory(1)}>Смартфоны</button>
-				<button onClick={()=>setCategory(2)}>Планшеты</button>
-			<hr />
-		
 			<div className="catalog_list">
 				{
 					sortAndFilterProducts.length ?

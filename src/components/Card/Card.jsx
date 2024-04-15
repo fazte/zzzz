@@ -1,5 +1,5 @@
 import Button from '../Button/Button'
-import product from '/card/product.jpg'
+import product from '/card/product.png'
 import './Card.css'
 import {Link} from 'react-router-dom'
 
@@ -12,10 +12,13 @@ export default function Card({name,price,id,addCard}){
                 {name}
             </div>
             <div className="card_price">
-                {price}
+                {price} ₽
             </div>
-						<button onClick={addCard}>В корзину 2</button>
-						<Link to={`${id}`}>Подробнее</Link>
+            <div className="butt">
+                <button onClick={addCard}>В корзину 2</button>
+				<Link to={`${id}`}>Подробнее</Link>
+            </div>
+				
         </div>
     )
 }

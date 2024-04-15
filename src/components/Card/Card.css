@@ -10,6 +10,7 @@
     display: block;
     margin: auto;
     margin-bottom: 46px;
+    max-width: 120px;
 }
 .car_title{
     font-size: 18px;
@@ -20,4 +21,18 @@
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 34px;
+}
+
+.butt{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.butt > a{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
 }

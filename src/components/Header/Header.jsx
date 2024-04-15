@@ -19,7 +19,7 @@ export default function Header({basket}){
             </div>
             <nav className="nav">
                 <Link to="/">Главная</Link>
-                <Link to="/">Каталог</Link>
+                <Link to="/catalog">Каталог</Link>
 				<Modalka basket={basket} />               
             </nav>
             <div className="icons">
