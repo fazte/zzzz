@@ -14,3 +14,28 @@
     margin-top: 90px;
     margin-bottom: 136px;
 }
+
+.inp{
+ padding: 10px 30px;   
+ border: none;
+ border-bottom: 1px solid black;
+}
+
+.inp:focus{
+    border: none;
+    border: 1px solid blue;
+}
+
+.sel{
+    padding: 10px 30px;
+}
+
+.dna{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+

@@ -1,5 +1,6 @@
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import produc from '/card/product.png'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -23,6 +24,7 @@ return(
             return (
               <SwiperSlide key={key} >
                 <article className="product-card">
+                  <img src={produc} alt="" />
                   <h3 className="product__name">{product.name}</h3>
                   <p className="product__price">{product.price}</p>
                   <button className="product__btn" data-id={product.id}>

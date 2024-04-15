@@ -37,11 +37,15 @@ export default function Catalog({addToBasket,basket,products, setProducts}) {
 	console.log(sortAndFilterProducts);
 	return (
 		<>
-			<input onChange={search} type="search" name="search" placeholder="Touck" />
-			<select onChange={sort}>
-				<option value="price_asc">Mo Bo3pocTaHuK LeHb</option>
-				<option value="price_desc">Mo y6biBaHuw LeHbi</option>
+		<div className="dna">
+			<input className='inp' onChange={search} type="search" name="search" placeholder="Поиск" />
+			<select className='sel' onChange={sort}>
+				<option value="price_asc">По возрастанию</option>
+				<option value="price_desc">По убыванию</option>
 			</select>
+		</div>
+			
+
 			<div className="catalog_list">
 				{
 					sortAndFilterProducts.length ?

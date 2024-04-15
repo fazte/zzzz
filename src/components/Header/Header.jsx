@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Modalka from '../Modalka/Modalka'
 
-export default function Header({basket}){
+export default function Header({basket,products, setProducts}){
 	// const [modalIsOpen, setModalIsOpen] = useState(false)
 	
     return(
@@ -20,7 +20,7 @@ export default function Header({basket}){
             <nav className="nav">
                 <Link to="/">Главная</Link>
                 <Link to="/catalog">Каталог</Link>
-				<Modalka basket={basket} />               
+				<Modalka basket={basket} products={products} setProducts={setProducts} />               
             </nav>
             <div className="icons">
                 <a href=""><img src={basket} alt="" /></a>

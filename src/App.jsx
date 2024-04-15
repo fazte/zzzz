@@ -25,14 +25,13 @@ function App() {
 	
   return (
     <>
-      <Header addToBasket={setBasket} basket={basket}/>
+      <Header addToBasket={setBasket} basket={basket} products={products} setProducts={setProducts}/>
         <Routes>
           <Route path="/" element={<Home products={products} setProducts={setProducts}/>}/>
           <Route path="/catalog" element={<Catalog addToBasket={setBasket} basket={basket} products={products} setProducts={setProducts}/>}/>
 					<Route path="/catalog/:id" element={<CardPage products={products} setProducts={setProducts}/>}/>
 					<Route path="/basket" />
-				</Routes>
-        
+				</Routes>   
       <Footer/>
     </>
   )

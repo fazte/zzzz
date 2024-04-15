@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom";
+import product from '/card/product.png'
+import './CardPage.css'
 
 export default function CardPage({products, setProducts}){
 
@@ -8,8 +10,10 @@ export default function CardPage({products, setProducts}){
 	console.log(prod)
 	return(
 		<>
+		<img className="bbb" src={product} alt="" />
 		<h1>{prod.name}</h1>
-		<p>{prod.price}</p>
+		<p>{prod.price}₽</p>
+		
 		</>
 	)
 }
